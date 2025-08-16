@@ -20,12 +20,11 @@ Because of its size, I provide a link here: https://github.com/tampapath/lung_co
 - `lung_n`: normal lung tissue  
 - `lung_scc`: lung squamous cell carcinoma (cancer)  
 
-## Preprocessing  
-- Normalization and augmentation were applied (resizing, flipping, rotation).  
-- The dataset was not originally split into training and validation sets, so a script `organize_data` was created to:  
-  - split the data,  
-  - store it on Google Drive,  
-  - and prepare it for training in Google Colab.  
+## Preprocessing   
+- The dataset was not originally split into training and validation sets, so a script `organize_data` was created to split the data 
+  and store it on Google Drive, from which the data was later downloaded.
+- Normalization and augmentation were applied (resizing, flipping, rotation). 
+
 
 ## Training  
 For the training the loss function was Cross Entropy Loss and the optimizer Adam.
